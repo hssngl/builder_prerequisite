@@ -1,0 +1,11 @@
+export const droppable = "data-droppable";
+export const exclude = "data-exclude";
+export const draggable = "data-draggable";
+export const cloneable = "data-cloneable";
+export const selectable = "data-selectable";
+export const editable = "data-editable";
+export const hoverable = "data-hoverable";
+export const handleable = "data-handle";
+export const dndname = "data-name";
+export const group_name = "data-group_name";
+export const data_insert_html = "data-insert-html";

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .red{
+                background-color:red;
+            }
+            .blue{
+                background-color:blue;
+            }
+            .color-text{
+                color:'white';
+            }
+            #purpule{
+                background-color:purple;
+                color:black;
+            }
+         .wrapper {
+           display: flex;
+           flex-flow: column;
+         }
+
+        </style>
+    </head>
+    
+<body class="container1">
+    <h1>Titulo</h1>
+    <p>Parrafo</p>
+    <div id="parent">
+        List
+        <ul>
+            <li>1</li>
+            <li>2</li>
+        </ul>
+    </div>
+    
+    
+    How use ??
+    <code class="wrapper">
+        
+        
+            new test
+            <ul class="order">
+                    <li>domEditor[
+     selector_type: 'querySelectorAll',
+     selector: 'h1',
+     method: 'setAttribute',
+     index : null,
+     property : null,
+     value : '{‘first_attr’:’cvalue’,’second_attr’:’value’}',]
+            </ul>
+            
+            Elements
+            <ul class="order">
+                    <li>domEditor('querySelector','#parent','children')</li>
+            </ul>
+            
+            insertAdjacentHTML
+            
+            <ul class="order">
+                   <!-- <li>domEditor('querySelectorAll','li','insertAdjacentHTML',3,null,{'beforebegin':'<h6>beforebegin</h6>','afterbegin':'<h2>afterbegin</h2>','beforeend':'<p>beforeend</p>','afterend':'<p>afterend</p>','noexiste':'Noexiuste'})</li>-->
+                    <li>domEditor('querySelectorAll','li','insertAdjacentHTML',3,null,{'beforebegin':'HTMLVALUEbeforebegin','noexiste':'Noexiuste'})</li>
+                    <li>domEditor('querySelectorAll','li','insertAdjacentElement',3,null,{'beforebegin':domEditor('getElementById','parent')})</li>
+            </ul>
+        
+        
+            Attributes
+            <ul class="order">
+                    <li> domEditor('querySelector','h1','attributes')</li>
+                    <li> domEditor('querySelector','h1','getAttribute',null,'style')</li>
+            </ul>
+            
+            
+            Style
+            <ul class="order">
+                <li class="red">domEditor('querySelector','li.red','classList.replace',null,null,{'red':'blue'})</li>
+                <li> domEditor('querySelector','h1','setAttribute',null,null,{"style": "background-color: blue"}) </li>
+                <li> domEditor('querySelector','h1','style',null,'display','none') </li>
+                <li> domEditor('querySelector','h1','style',null,'display',null) </li>
+                
+            </ul>
+    </code>    
+    
+ </body>   
+    <button id="reorder" type="button">Reorder</button>
+    <button id="unreorder" type="button">Unreorder</button>
+
+    <script>
+// var reorderButton = document.querySelector('#reorder');
+// var unreorderButton = document.querySelector('#unreorder');
+// var abcDivs = document.querySelectorAll('.order');
+// var newOrder = [2, 0, 1];
+
+// reorderButton.addEventListener('click', function() {
+//   abcDivs.forEach(function(element, index) {
+//     element.style.order = newOrder[index];
+//   });
+// });
+// unreorderButton.addEventListener('click', function() {
+//   abcDivs.forEach(function(element, index) {
+//     element.style.order = null;
+//   });
+// });
+</script>
+    <script type="text/javascript" src="domEditor.js"></script>
+    <!--<script type="text/javascript" src="elements.js"></script>-->
+</html>
